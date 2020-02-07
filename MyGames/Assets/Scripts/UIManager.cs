@@ -16,7 +16,7 @@ public class UIManager : MonoBehaviour
     // Preserve the game object that this component is attached to
     private void Awake()
     {
-        DontDestroyOnLoad(gameObject);
+       DontDestroyOnLoad(gameObject);
     }
     // Start is called before the first frame update
     void Start()
@@ -41,21 +41,18 @@ public class UIManager : MonoBehaviour
     public void LoadNumSlotScene()
     {
         SceneManager.LoadScene("Number Slot Machine");
-        SceneManager.sceneLoaded += OnSceneLoaded;
     }
 
-    public void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    public void LoadLuckyWheelScene()
     {
-        if (scene.buildIndex >= 0)
-        {
-            Button quitButton = GameObject.FindGameObjectWithTag("Back").GetComponent<Button>();
-            quitButton.onClick.AddListener(BackToMainMenu);
-        }
-    }
-    void BackToMainMenu()
-    {
-        SceneManager.LoadScene("StartScene");
+        SceneManager.LoadScene("LuckyWheel");
     }
 
- 
+    public void LoadSlotMachineScene()
+    {
+        SceneManager.LoadScene("SlotMachine");
+    }
+
+
+
 }

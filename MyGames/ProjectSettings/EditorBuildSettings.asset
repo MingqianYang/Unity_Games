@@ -14,4 +14,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Number Slot Machine.unity
     guid: ac063be3bd8e55348aca915a1b362311
+  - enabled: 1
+    path: Assets/Scenes/LuckyWheel.unity
+    guid: 300b1da00b3d1d14882d2122eaa7e7b4
+  - enabled: 1
+    path: Assets/Scenes/SlotMachine.unity
+    guid: 5d019986947d37640b7a77f3f1620128
   m_configObjects: {}
